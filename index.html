@@ -1,0 +1,53 @@
+<!DOCTYPE html><!--indica el tipo de documento y la versión (html5)-->
+<html lang="es"><!--el atributo lang indica el idioma-->
+    <head><!--la cabecera de la página. Para indicar información de la página-->
+
+        <!--<style> es una etiqueta que se usa para CSS interno, aunque también existe el atributo style que se usa en CSS inline (ejemplo: <p style="font-family: 'Simplifica', sans-serif;">). Es recomnendable que <style> se ponga al inicio, dentro de <head> y una sola vez para que al momento de cargar la página, se cargen estos estilos primero. No es recomendable usar este método al tener varias páginas, también puede ocasionar que el tiempo de carga de la página sea más largo. Tampoco es recomendable usar dos o los tres tipos de CSS (externo, interno e inline) en un mismo documento html. El siguiente es un ejemplo de CSS interno:
+        <style>
+            #contenido{ display: flex; justify-content: center; }
+
+            .ps4{ width: 600px; margin: 5px; border: solid 1px blue; }
+
+            .descripcion{ width: 500px; margin: 5px; padding: 5px; }
+
+            h1{ font-family: 'Simplifica', sans-serif; }
+
+            hr{ border-color: blue; }
+
+            #precio{ color: red; }
+        </style>-->
+
+        <link href="https://fonts.cdnfonts.com/css/simplifica" rel="stylesheet"><!--para poder usar la fuente Simplifica-->
+        <link rel="stylesheet" href="estilo.css"><!--conexion con la hoja de estilo-->
+        <meta charset="UTF-8"><!--para reconocer caracteres especiales como la ñ, signos de interrogacion y exclamacion de apertura, acentos, etc.-->
+        <title>Sony PlayStation 4</title><!--texto que aparece en la pestaña de la pagina-->
+    </head>
+    <body>
+        <div id="contenido"><!--una división o una sección en un documento html-->
+            
+            <img src="./imagenes/ps4.jpg" class="ps4"><!--etiqueta para colocar imagenes-->
+            
+            <div class="descripcion">
+                
+                <h1>Sony PlayStation 4</h1><!--Etiqueta de encabezado. Solo usar una vez h1-->
+                
+                <hr><!--para hacer una línea horizontal de división-->
+                
+                <p>Es la cuarta videoconsola de sobremesa producida por Sony Computer Entertainment. Contiene un contról inalámbrico DualShock 4.
+                Esta consola cuenta con un procesador especial de chip único, un procesador AMD de 8 núcleos bajo la arquitectura x86-64, una memoria GDDR5 de 8GB y con una capacidad de almacenamiento de 500 GB.
+                También cuenta con 2 puertos USB de supervelocidad (USB 3.1 Gen1) y 1 puerto AUX, un puerto de conexión de red Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T) IEEE 802.11 a/b/g/n/ac y Bluetooth®v4.0
+                También cuenta con un puerto de salida HDMI™ (salida HDR compatible).
+                </p><!--Esto es un parrafo-->
+                
+                <p id="precio">$12,686<br><!--Salto del línea--></p>
+                
+                <hr>
+                <input type="button" value="Comprar ahora"><!--para pedir información especifica al usuario. El atributo type indica que es un botón-->
+                <input type="button" value="Agregar a la cesta">
+                <hr>
+
+            </div>
+        
+        </div>
+    </body>
+</html>

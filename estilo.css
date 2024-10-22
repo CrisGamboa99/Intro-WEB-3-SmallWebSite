@@ -1,0 +1,47 @@
+/*la sintaxis de css se conforma por propiedades que son identificadores que determinan el diseño o el formato de la página web. Las propiedades cuentan con valores que son las caracteristicas que nos permitiran darle el diseño a la página web.*/
+
+/*las diferencias entre border, padding y margin son que padding es el espacio que hay desde el borde de la etiqueta o bloque hacia el contenido, margin es el espacio que hay desde el borde de la etiqueta hacia afuera, el espacio que hay despues del elemento, border es el contenedor entre el padding y el margin.*/
+
+/*El box-model o modelo de caja recibe ese nombre debido a que en los navegadores todo se construye a partir de cajas. Existen dos tipos de cajas: en bloque y en linea. Al ser en bloque se forzará un salto de línea despues del elemento y al ser en línea o inline no se fuerza ningún salto de línea. Para determinar como se comporta una caja se usa la propiedad display.*/
+
+/*Existen cuatro propiedades para la visualización de las etiquetas: display, visibility, overflow y z-index.*/
+/*display modifica la forma en que se visualiza un elemento, una de sus propiedades es que permite ocultar o mostrar completamente un elemento haciendo que el resto de los elementos se muevan para ocupar su lugar.*/
+/*visibility permite hacer invisible un elemento sin modificar su posición (para ocultar se usa el valor hidden, para mostrar se usa visible y para hacer algo similar a la propiedad display se usa collapse).*/
+/*overflow se usa para controlar el contenido que sobresale de su elemento, los valores de overflow son: visible que es la manera por defecto en la que el contenido sobresale de la zona del elemento, hidden que hace que el contenido sobrante de la zona se oculte, scroll que también oculta el contenido sobrante pero añade barras de scroll, auto que puede depender del navegador pero generalmente hace lo mismo que scroll.*/
+/*z-index sirve para controlar la posición interdimensional de las cajas posicionadas, esta propiedad permite indicar las cajas que se muestran delante o detras de otras cuando se producen solapamientos, el valor más común de esta propiedad es un número, considerando al 0 como el valor más bajo, mientras más grande el número más cerca del usuario se muestra la caja.*/
+
+/*position es una propiedad que especifica el como se posiciona un elemento. Sus valore son static, fixed, sticky, relative y absolute.*/
+/*static que es el valor por defecto, el elemento fluye junto con los otros elementos, tampoco acepta propiedades auxiliares top, bottom, left y right.*/
+/*fixed hace que el elemento no se mueva en la pantalla, también se remueve del flujo temporal del documento sin crearse espacio alguno para el elemento en el esquema de la página.*/
+/*sticky es similar a fixed, con la diferencia que este es fijo en relación al desplazamiento de la página y es posicionado de acuerdo al flujo normal del documento.*/
+/*relative permite cambiar la posición de un elemento con referencia a su posición inicial.*/
+
+#contenido{
+    /*propiedad: valor*/
+    display: flex; /*en este caso tenemos la propiedad display que determina como se visualizará un elemento. Su valor sería flex que se comporta como un elemento de bloque, lo que permite que los elementos se distribuyan de manera horizontal o vertical, en este caso los elementos se alinearan de manera horizontal.*/
+    justify-content: center; /*Permite alinear los elementos. En este caso, al tener el valor center, los elementos estarán centrados.*/
+}
+
+.ps4{
+    width: 600px; /*establece el ancho del elemento*/
+    margin: 5px; /*este es un margin, lo que hará que esta etiqueta tenga un especio de 5 pixeles con la siguiente etiqueta.*/
+    border: solid 1px blue; /*este es un borde, que hará que la etiqueta este rodeada por una línea, en este caso al tener de valor solid tendrá una sola línea, con un tamaño de 1 pixel y de color azul.*/
+}
+
+.descripcion{
+    width: 500px;
+    margin: 5px;
+    padding: 5px; /*este es un padding, que hará que haya un espacio, en este caso de 5 pixeles entre el borde de la etiqueta y el inicio de su contenido.*/
+}
+
+h1{
+    font-family: 'Simplifica', sans-serif; /*determina el tipo de fuente o letra que tendrá el elemento.*/
+}
+
+hr{
+    border-color: blue;
+}
+
+#precio{
+    color: red; /*color sirve, en este caso para cambiar el color de la letra.*/
+}
